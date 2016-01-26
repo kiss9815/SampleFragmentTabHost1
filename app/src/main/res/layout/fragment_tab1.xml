@@ -5,9 +5,28 @@
     tools:context="com.example.tacademy.samplefragmenttabhost1.Tab1Fragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Tab1" />
+   <android.support.v4.app.FragmentTabHost
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/tabHost">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:id="@android:id/tabcontent" />
+
+           <TabWidget
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@android:id/tabs"/>
+       </LinearLayout>
+
+   </android.support.v4.app.FragmentTabHost>
 
 </FrameLayout>
