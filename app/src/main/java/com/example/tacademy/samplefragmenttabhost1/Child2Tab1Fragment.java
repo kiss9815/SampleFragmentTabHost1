@@ -26,4 +26,10 @@ public class Child2Tab1Fragment extends Fragment {
         return inflater.inflate(R.layout.fragment_child2_tab1, container, false);
     }
 
+    @Override
+    public void onResume() {//액션바의 text 바꾸는 법
+        super.onResume();
+        getActivity().setTitle("child2 이당");
+    }
+
 }
