@@ -30,6 +30,6 @@ public class Tab2Fragment extends Fragment {
     @Override
     public void onResume() {//액션바의 text 바꾸는 법
         super.onResume();
-        getActivity().setTitle("Tab1 이당");
+        getActivity().setTitle("tab2 이당");
     }
 }
